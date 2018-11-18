@@ -2,7 +2,7 @@
 Tsunami scientist Trevor rolls some dice and tells you that the added result is 17. How many dice did Trevor roll?
 ---
 title: "Trevor's dice problem"
-author: "Feyrer"
+author: "Feyrer/Neuling"
 date: "18 11 2018"
 output: html_document
 ---
