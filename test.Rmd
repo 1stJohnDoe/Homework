@@ -1,0 +1,47 @@
+---
+title: "Trevor's dice problem"
+author: "Feyrer"
+date: "18 11 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###Tsunami scientist Trevor rolls some dice and tells you that the added result is 17.  
+###How many dice did Trevor roll?
+
+Frage: Wieviel Würfel benutzt Trever um genau 17 zu Würfeln?
+
+Überlegung: Zwischen 3 und 17 Würfel = Wertebereich, 100000 Wiederholungen
+
+```{r}
+Aw= sample(2:17, 100000,replace=TRUE)
+```
+Matrix aus 100x1000
+```{r}
+ result=rep(NA,100000)
+```
+
+```{r}
+ i=1
+```
+Die Anzahl der Würfel welche genau 17 ergeben aus 100.000 Versuchen
+```{r}
+ while(i<=100000){
+  if(sum(sample(1:6, Aw[i], replace= TRUE)) == 17){
+    result[i]=Aw[i]
+  }
+  i=i+1
+}
+```
+
+```{r}
+ result=result[complete.cases(result)]
+```
+### Ergebnis dieses Durchlaufs
+Histogram der Ergebnisse 
+```{r}
+ hist(result)
+```
