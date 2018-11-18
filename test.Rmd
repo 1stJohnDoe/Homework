@@ -1,6 +1,6 @@
 ---
 title: "Trevor's dice problem"
-author: "Feyrer"
+author: "Feyrer/Neuling"
 date: "18 11 2018"
 output: html_document
 ---
