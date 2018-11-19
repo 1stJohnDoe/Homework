@@ -19,7 +19,7 @@ Frage: Wieviel Würfel benutzt Trever um genau 17 zu Würfeln?
 Überlegung: Zwischen 3 und 17 Würfel = Wertebereich, 100000 Wiederholungen
 
 ```{r}
-Aw= sample(2:17, 100000,replace=TRUE)
+Aw= sample(3:17, 100000,replace=TRUE)
 ```
 Matrix aus 100x1000
 ```{r}
